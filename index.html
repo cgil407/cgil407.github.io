@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Tailwind Colors (using direct hex for simplicity in single file) */
+        /* Midnight Blue: #003B6D */
+        /* Blue Sky: #6699CC */
+        /* Dim Gray: #676767 */
+        /* Silver: #BDBDBD */
+
+        body {
+            font-family: 'Inter', sans-serif; /* Default font for body */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Times New Roman', serif; /* Specific font for headers */
+        }
+
+        /* Hide all pages by default, JavaScript will show the active one */
+        .page-content {
+            display: none;
+        }
+
+        /* Active navigation link style */
+        .nav-link.active {
+            background-color: #003B6D; /* Midnight Blue */
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-[#003B6D] text-white p-4 flex flex-col sm:flex-row items-center justify-between shadow-md rounded-b-lg">
+        <div class="flex items-center mb-4 sm:mb-0">
+            <!-- New Logo -->
+            <img src="petshoplogo.png" alt="Paradigm Pet Professionals Logo" class="w-24 h-24 rounded-full mr-4 object-cover">
+            <div>
+                <h1 class="text-4xl font-bold text-white font-serif">Paradigm Pet Professionals</h1>
+                <p class="text-lg text-blue-200">Evidence-based pet care advice for every pet lover</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-[#6699CC] p-4 shadow-md rounded-t-lg mt-0">
+        <ul class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-semibold">
+            <li><a href="#home" class="nav-link p-3 rounded-md transition-colors duration-200 hover:bg-[#003B6D] hover:text-white" data-page="home">Home</a></li>
+            <li><a href="#cats" class="nav-link p-3 rounded-md transition-colors duration-200 hover:bg-[#003B6D] hover:text-white" data-page="cats">Cats</a></li>
+            <li><a href="#dogs" class="nav-link p-3 rounded-md transition-colors duration-200 hover:bg-[#003B6D] hover:text-white" data-page="dogs">Dogs</a></li>
+            <li><a href="#small-animals" class="nav-link p-3 rounded-md transition-colors duration-200 hover:bg-[#003B6D] hover:text-white" data-page="small-animals">Small Animals</a></li>
+            <li><a href="#contact" class="nav-link p-3 rounded-md transition-colors duration-200 hover:bg-[#003B6D] hover:text-white" data-page="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container mx-auto p-6 mt-4 bg-white shadow-lg rounded-lg">
+
+        <!-- Home Page -->
+        <section id="home-page" class="page-content">
+            <h2 class="text-3xl font-bold text-[#003B6D] mb-6 font-serif">Welcome to Paradigm Pet Professionals</h2>
+            <p class="mb-4 text-lg leading-relaxed">
+                Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+            </p>
+            <p class="mb-6 text-lg leading-relaxed">
+                Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://placehold.co/600x400/6699CC/FFFFFF?text=Consultation+Image" alt="Two people having a consultation" class="w-full rounded-lg shadow-md mb-4 object-cover h-64">
+                    <h3 class="text-2xl font-semibold text-[#003B6D] mb-3 font-serif">Personalized Pet Care Advice</h3>
+                    <p class="text-base mb-4">
+                        Our "Pexperts" offer one-on-one virtual consultations to address your specific pet health and well-being concerns.
+                    </p>
+                    <button class="bg-[#6699CC] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#003B6D] transition-colors duration-300 text-lg font-semibold" onclick="showPage('contact')">Schedule a Consultation</button>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://placehold.co/600x400/BDBDBD/676767?text=Adoption+Image" alt="Happy dogs looking up" class="w-full rounded-lg shadow-md mb-4 object-cover h-64">
+                    <h3 class="text-2xl font-semibold text-[#003B6D] mb-3 font-serif">Find Your New Best Friend</h3>
+                    <p class="text-base mb-4">
+                        We can guide you through the adoption process, from choosing the right pet to bringing them home.
+                    </p>
+                    <button class="bg-[#6699CC] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#003B6D] transition-colors duration-300 text-lg font-semibold" onclick="showPage('contact')">Start Your Adoption Journey</button>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Looking for your new best friend?</h3>
+            <p class="mb-4 text-lg">The following organizations can help you find and adopt the perfect companion:</p>
+            <ul class="list-disc list-inside space-y-2 mb-8 text-lg">
+                <li><a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources" target="_blank" class="text-[#6699CC] hover:underline">General Pet Resources</a></li>
+                <li><a href="https://www.aspca.org/" target="_blank" class="text-[#6699CC] hover:underline">ASPCA</a></li>
+                <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank" class="text-[#6699CC] hover:underline">Fish Rescue</a></li>
+                <li><a href="https://savethesnakes.org/snakerescuecall/" target="_blank" class="text-[#6699CC] hover:underline">Snake Rescue</a></li>
+                <li><a href="https://ftlob.rescuegroups.org/" target="_blank" class="text-[#6699CC] hover:underline">Bird Rescue</a></li>
+            </ul>
+        </section>
+
+        <!-- Cats Page -->
+        <section id="cats-page" class="page-content">
+            <h2 class="text-3xl font-bold text-[#003B6D] mb-6 font-serif">Caring for Your Feline Friend</h2>
+            <p class="mb-6 text-lg leading-relaxed">
+                Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <img src="maddie.jpg" alt="A calico cat looking at the camera" class="w-full rounded-lg shadow-md object-cover h-64">
+                <img src="oreo1.jpg" alt="A black and white cat lying on stairs" class="w-full rounded-lg shadow-md object-cover h-64">
+            </div>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Zero to Four Weeks</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include the following:
+            </p>
+            <ul class="list-disc list-inside space-y-1 mb-6 text-base">
+                <li>too many other siblings are competing for mom's milk</li>
+                <li>gastrointestinal disease</li>
+                <li>environmental conditions such as extreme heat or cold, or unsanitary conditions</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Four Weeks to One Year</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the ASPCA, kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food. Cat food that is optimized for kittens provides the additional nutrients that are needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary requirements. You should always consult with your veterinarian for recommendations.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">One Year to Seven Years</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                This age is when kittens reach the cat stage and do not need as many nutrients. At this age, their level of activity decreases, and so does their metabolism. It is <span class="font-bold">not</span> recommended to leave food out for the cats all day. Instead, provide food a couple times a day so they eat meals rather than snacking throughout the day. This practice reduces the risk of obesity and other weight-related feline ailments.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Seven Years and More</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats and calories and more quality proteins. This means when you are purchasing packaged foods for your cat, look for food that states a particular protein (such as "salmon") and <span class="font-bold">not</span> just a category (such as fish). This usually means they are byproducts, or combinations, of lesser quality proteins.
+            </p>
+        </section>
+
+        <!-- Dogs Page -->
+        <section id="dogs-page" class="page-content">
+            <h2 class="text-3xl font-bold text-[#003B6D] mb-6 font-serif">Understanding Your Canine Companion</h2>
+            <p class="mb-6 text-lg leading-relaxed">
+                The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <img src="chip.jpg" alt="A small black and white dog with its tongue out" class="w-full rounded-lg shadow-md object-cover h-64">
+                <img src="Maci Sand Castle.png" alt="A white dog running on a beach near a sand castle" class="w-full rounded-lg shadow-md object-cover h-64">
+            </div>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Diet & Exercise</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months years old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. And a dog’s typical body mass is composed of somewhere between 60 and 70 percent water. The ASPCA says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!
+            </p>
+            <p class="mb-6 text-base leading-relaxed">
+                Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally a range of 30–120 minutes of exercise is recommended per day! You can also choose from a variety of toys to encourage physical activity; just be sure they are age appropriate and do not pose a choking hazard. Pay careful attention to toys that require supervision.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Grooming & Handling</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. Rinse <span class="font-bold">all</span> of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Vaccinations & Medications</h3>
+            <p class="mb-6 text-base leading-relaxed">
+                You should <span class="font-bold">always</span> consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.
+            </p>
+        </section>
+
+        <!-- Small-Animal Owners Page -->
+        <section id="small-animals-page" class="page-content">
+            <h2 class="text-3xl font-bold text-[#003B6D] mb-6 font-serif">Small Animal Care: Creating a Happy Home</h2>
+            <p class="mb-6 text-lg leading-relaxed">
+                Sometimes we want a pet in our life but think it’s impossible because we are not home enough to take care of it, or we don’t have enough room. Consider adopting a small animal such as a hermit crab, mouse, gerbil, hamster, guinea pig, or even a chinchilla! Depending on which type of animal you adopt, you can provide a comfortable environment using anything from small to large cages or glass aquariums. You will also need to provide amenities for your new pet, such as bedding or substrate, toys, an exercise wheel, a water dish or drip bottle, a food dish, and grooming equipment. You also need to consider if your new pet will need a friend or if it will be happy living alone. Our “Pexperts” are here to help you decide which pet is right for you and how to provide them with a happy home. Schedule a consultation with us today!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <img src="Mr Magoo Closeup.jpg" alt="Close up of a snake on a striped blanket" class="w-full rounded-lg shadow-md object-cover h-64">
+                <img src="Mr Magoo Full.jpg" alt="A snake coiled on a striped blanket" class="w-full rounded-lg shadow-md object-cover h-64">
+                <img src="https://placehold.co/600x400/6699CC/FFFFFF?text=Guinea+Pigs" alt="Two guinea pigs eating carrots" class="w-full rounded-lg shadow-md object-cover h-64">
+            </div>
+
+            <h3 class="text-2xl font-semibold text-[#003B6D] mb-4 font-serif">Resources to Get You Started:</h3>
+            <ul class="list-disc list-inside space-y-2 mb-8 text-lg">
+                <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" class="text-[#6699CC] hover:underline">Guinea Pig Care</a></li>
+                <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" class="text-[#6699CC] hover:underline">Mouse Care</a></li>
+                <li><a href="https://pethermitcrabs.org/cage-habitat/" target="_blank" class="text-[#6699CC] hover:underline">Hermit Crab Care</a></li>
+                <li><a href="https://chinchillacare.org/cage-habitat/" target="_blank" class="text-[#6699CC] hover:underline">Chinchilla Care</a></li>
+                <li><a href="https://petgerbils.org/cage-habitat/" target="_blank" class="text-[#6699CC] hover:underline">Gerbil Care</a></li>
+                <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" class="text-[#6699CC] hover:underline">Hamster Care</a></li>
+            </ul>
+            <div class="text-center">
+                <button class="bg-[#6699CC] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#003B6D] transition-colors duration-300 text-lg font-semibold" onclick="showPage('contact')">Schedule a Consultation Today!</button>
+            </div>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section id="contact-page" class="page-content">
+            <h2 class="text-3xl font-bold text-[#003B6D] mb-6 font-serif">Request a Virtual Consultation</h2>
+            <p class="mb-6 text-lg leading-relaxed">
+                Please fill out the form below to request a virtual consultation with one of our "Pexperts". We will contact you within 48 hours to schedule your consultation. All fields are required.
+            </p>
+
+            <form class="space-y-6 max-w-2xl mx-auto p-6 bg-gray-50 rounded-lg shadow-inner">
+                <div>
+                    <label for="name" class="block text-lg font-medium text-[#003B6D] mb-2">Your Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-[#003B6D] mb-2">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium text-[#003B6D] mb-2">Email Address:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent">
+                </div>
+                <div>
+                    <label for="timezone" class="block text-lg font-medium text-[#003B6D] mb-2">Time Zone:</label>
+                    <select id="timezone" name="timezone" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent">
+                        <option value="">Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="AKST">Alaska Standard Time (AKST)</option>
+                        <option value="HST">Hawaii Standard Time (HST)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pet-name" class="block text-lg font-medium text-[#003B6D] mb-2">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent">
+                </div>
+                <div>
+                    <label for="pet-type" class="block text-lg font-medium text-[#003B6D] mb-2">Pet Type:</label>
+                    <input type="text" id="pet-type" name="pet-type" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent" placeholder="e.g., Dog, Cat, Bird, Fish, Hamster">
+                </div>
+                <div>
+                    <label for="pet-age" class="block text-lg font-medium text-[#003B6D] mb-2">Pet's Age:</label>
+                    <input type="text" id="pet-age" name="pet-age" required class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#6699CC] focus:border-transparent" placeholder="e.g., 2 years, 6 months">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-[#6699CC] text-white px-8 py-4 rounded-md shadow-lg hover:bg-[#003B6D] transition-colors duration-300 text-xl font-semibold">Submit Request</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#676767] text-[#BDBDBD] p-4 text-center mt-8 shadow-inner rounded-t-lg">
+        <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+        <p>Evidence-based pet care advice for every pet lover.</p>
+    </footer>
+
+    <script>
+        // Function to show a specific page and update active navigation link
+        function showPage(pageId) {
+            // Hide all page contents
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.style.display = 'none';
+            });
+
+            // Show the requested page
+            const activePage = document.getElementById(pageId + '-page');
+            if (activePage) {
+                activePage.style.display = 'block';
+            }
+
+            // Remove 'active' class from all nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked nav link
+            const currentNavLink = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+            if (currentNavLink) {
+                currentNavLink.classList.add('active');
+            }
+        }
+
+        // Event listeners for navigation links
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default link behavior
+                    const pageId = event.target.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // Show the home page by default when the page loads
+            showPage('home');
+        });
+    </script>
+</body>
+</html>
