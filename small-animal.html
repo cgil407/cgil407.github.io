@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body></body>
+      <header>
+        <img src="images/ppetbrand.png" alt="Brand Logo" class="logo">
+        <img src="images/pheader.png" alt="Header Logo" class="header">
+        <p>Evidence-based pet care advice for every pet lover</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">Cats</a></li>
+            <li><a href="dog.html">Dogs</a></li>
+            <li><a href="small-animal.html" class="active">Small Animals</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <a href="small-animal.html" class="active">Small Animals</a>
+        </section>
+<section id="small-animals-page" class="page-content">
+    <h2 class="section-title">Small Animal Care: Creating a Happy Home</h2>
+    <p class="section-subtitle"></p>
+        Sometimes we want a pet in our life but think it’s impossible because we are not home enough to take care of it, or we don’t have enough room. Consider adopting a small animal such as a hermit crab, mouse, gerbil, hamster, guinea pig, or even a chinchilla! Depending on which type of animal you adopt, you can provide a comfortable environment using anything from small to large cages or glass aquariums. You will also need to provide amenities for your new pet, such as bedding or substrate, toys, an exercise wheel, a water dish or drip bottle, a food dish, and grooming equipment. You also need to consider if your new pet will need a friend or if it will be happy living alone. Our “Pexperts” are here to help you decide which pet is right for you and how to provide them with a happy home. Schedule a consultation with us today!
+    </p>
+
+    <div class="pet-image-grid">
+        <img src="Mr Magoo Closeup.jpg" alt="Close up of a snake on a striped blanket" class="pet-image">
+        <img src="Mr Magoo Full.jpg" alt="A snake coiled on a striped blanket" class="pet-image">
+        <img src="https://placehold.co/600x400/6699CC/FFFFFF?text=Guinea+Pigs" alt="Two guinea pigs eating carrots" class="pet-image">
+    </div>
+
+    <h3 class="section-subheading">Resources to Get You Started:</h3>
+    <ul class="resource-list">
+        <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" class="resource-link">Guinea Pig Care</a></li>
+        <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" class="resource-link">Mouse Care</a></li>
+        <li><a href="https://pethermitcrabs.org/cage-habitat/" target="_blank" class="resource-link">Hermit Crab Care</a></li>
+        <li><a href="https://chinchillacare.org/cage-habitat/" target="_blank" class="resource-link">Chinchilla Care</a></li>
+        <li><a href="https://petgerbils.org/cage-habitat/" target="_blank" class="resource-link">Gerbil Care</a></li>
+        <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" class="resource-link">Hamster Care</a></li>
+    </ul>
+    <div class="button-container">
+        <button class="primary-button" onclick="showPage('contact')">Schedule a Consultation Today!</button>
+    </div>
+</section>
+
+<!-- Contact Us Page -->
+<section id="contact-page" class="page-content" style="display: none;">
+    <h2 class="section-title">Request a Virtual Consultation</h2>
+    <p class="section-subtitle">
+        Please fill out the form below to request a virtual consultation with one of our "Pexperts". We will contact you within 48 hours to schedule your consultation. All fields are required.
+    </p>
+
+    <form class="consultation-form">
+        <div>
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" id="name" name="name" required class="form-input">
+        </div>
+        <div>
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required class="form-input">
+        </div>
+        <div>
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" id="email" name="email" required class="form-input">
+        </div>
+        <div>
+            <label for="timezone" class="form-label">Time Zone:</label>
+            <select id="timezone" name="timezone" required class="form-select">
+                <option value="">Select your time zone</option>
+                <option value="EST">Eastern Standard Time (EST)</option>
+                <option value="CST">Central Standard Time (CST)</option>
+                <option value="MST">Mountain Standard Time (MST)</option>
+                <option value="PST">Pacific Standard Time (PST)</option>
+                <option value="AKST">Alaska Standard Time (AKST)</option>
+                <option value="HST">Hawaii Standard Time (HST)</option>
+            </select>
+        </div>
+        <div>
+            <label for="pet-name" class="form-label">Pet's Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required class="form-input">
+        </div>
+        <div>
+            <label for="pet-type" class="form-label">Pet Type:</label>
+            <input type="text" id="pet-type" name="pet-type" required class="form-input" placeholder="e.g., Dog, Cat, Bird, Fish, Hamster">
+        </div>
+        <div>
+            <label for="pet-age" class="form-label">Pet's Age:</label>
+            <input type="text" id="pet-age" name="pet-age" required class="form-input" placeholder="e.g., 2 years, 6 months">
+        </div>
+        <div class="button-container">
+            <button type="submit" class="primary-button">Submit Request</button>
+        </div>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Paradigm Pet Professionals. All rights reserved.</p>
+    <p>Evidence-based pet care advice for every pet lover.</p>
+</footer>
+</body>
+</html>
