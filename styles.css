@@ -79,7 +79,7 @@ main {
     color: #666;
 }
 
-.intro, .adoption-links, .consultation-form {
+.intro, .adoption-links, .consultation-form, .cat-intro, .cat-content{
     background-color: white;
     padding: 2em;
     margin: 1em;

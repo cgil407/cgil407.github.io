@@ -6,7 +6,7 @@
     <title>Cats - Paradigm Pet Professionals</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="cat-page">
     <header>
         <img src="images/ppetbrand.png" alt="Brand Logo" class="logo">
         <img src="images/pheader.png" alt="Header Logo" class="header">
@@ -26,11 +26,12 @@
             <a href="index.html">Home</a> &gt; 
             <a href="cat.html" class="active">Cats</a>
         </section>
-        <section class="content">
+        <section >
+            <section class="cat-intro">
             <h2>Cats</h2>
             <p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.
-                <br>
-                <br>
+            </section>
+            <section class="cat-content">
                 <b>Zero to Four Weeks</b><br>
                 It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include the following:<br>
                 ⦁	too many other siblings are competing for mom's milk<br>
@@ -53,55 +54,60 @@
                     <img src="images/cat2.png" alt="Image of cat">
                     <img src="images/cat1.png" alt="Image of cat">
                 </section>
+            </section>
         </section>
         <section id="contact-page" class="page-content" style="display: none;">
-    <h2 class="section-title">Request a Virtual Consultation</h2>
-    <p class="section-subtitle">
-        Please fill out the form below to request a virtual consultation with one of our "Pexperts". We will contact you within 48 hours to schedule your consultation. All fields are required.
-    </p>
+            <h2 class="section-title">Request a Virtual Consultation</h2>
+            <p class="section-subtitle">
+                Please fill out the form below to request a virtual consultation with one of our "Pexperts". We will contact you within 48 hours to schedule your consultation. All fields are required.
+            </p>
 
-    <form class="consultation-form">
-        <div>
-            <label for="name" class="form-label">Your Name:</label>
-            <input type="text" id="name" name="name" required class="form-input">
-        </div>
-        <div>
-            <label for="phone" class="form-label">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required class="form-input">
-        </div>
-        <div>
-            <label for="email" class="form-label">Email Address:</label>
-            <input type="email" id="email" name="email" required class="form-input">
-        </div>
-        <div>
-            <label for="timezone" class="form-label">Time Zone:</label>
-            <select id="timezone" name="timezone" required class="form-select">
-                <option value="">Select your time zone</option>
-                <option value="EST">Eastern Standard Time (EST)</option>
-                <option value="CST">Central Standard Time (CST)</option>
-                <option value="MST">Mountain Standard Time (MST)</option>
-                <option value="PST">Pacific Standard Time (PST)</option>
-                <option value="AKST">Alaska Standard Time (AKST)</option>
-                <option value="HST">Hawaii Standard Time (HST)</option>
-            </select>
-        </div>
-        <div>
-            <label for="pet-name" class="form-label">Pet's Name:</label>
-            <input type="text" id="pet-name" name="pet-name" required class="form-input">
-        </div>
-        <div>
-            <label for="pet-type" class="form-label">Pet Type:</label>
-            <input type="text" id="pet-type" name="pet-type" required class="form-input" placeholder="e.g., Dog, Cat, Bird, Fish, Hamster">
-        </div>
-        <div>
-            <label for="pet-age" class="form-label">Pet's Age:</label>
-            <input type="text" id="pet-age" name="pet-age" required class="form-input" placeholder="e.g., 2 years, 6 months">
-        </div>
-        <div class="button-container">
-            <button type="submit" class="primary-button">Submit Request</button>
-        </div>
-    </form>
-</section>
+            <form class="consultation-form">
+                <div>
+                    <label for="name" class="form-label">Your Name:</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                <div>
+                    <label for="phone" class="form-label">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required class="form-input">
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                <div>
+                    <label for="timezone" class="form-label">Time Zone:</label>
+                    <select id="timezone" name="timezone" required class="form-select">
+                        <option value="">Select your time zone</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="CST">Central Standard Time (CST)</option>
+                        <option value="MST">Mountain Standard Time (MST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                        <option value="AKST">Alaska Standard Time (AKST)</option>
+                        <option value="HST">Hawaii Standard Time (HST)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pet-name" class="form-label">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required class="form-input">
+                </div>
+                <div>
+                    <label for="pet-type" class="form-label">Pet Type:</label>
+                    <input type="text" id="pet-type" name="pet-type" required class="form-input" placeholder="e.g., Dog, Cat, Bird, Fish, Hamster">
+                </div>
+                <div>
+                    <label for="pet-age" class="form-label">Pet's Age:</label>
+                    <input type="text" id="pet-age" name="pet-age" required class="form-input" placeholder="e.g., 2 years, 6 months">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="primary-button">Submit Request</button>
+                </div>
+            </form>
+        </section>
+        <section class="images">
+            <img src="images/cat3.png" alt="Image of cat">
+            <img src="images/cat4.png" alt="Image of cat">
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
