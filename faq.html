@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigm Pet Professionals</title>
+    <title>FAQ - Paradigm Pet Professionals</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for breadcrumb navigation and active menu item */
+        .breadcrumb {
+            margin: 10px 0;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #003B6D;
+        }
+        .breadcrumb span {
+            margin: 0 5px;
+            color: #676767;
+        }
+        .breadcrumb .active {
+            color: #BDBDBD;
+        }
+        nav ul li a.active {
+            color: #6699CC;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,31 +38,32 @@
             <button type="submit">Search</button>
         </form>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="cat.html">Cats</a></li>
             <li><a href="dog.html">Dogs</a></li>
             <li><a href="bird.html">Birds</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
         </ul>
     </nav>
     <main>
-        <!-- Breadcrumb for the homepage -->
         <section class="breadcrumb">
-            <a href="index.html">Home</a>
+            <a href="index.html">Home</a> <span>&gt;</span> <a href="faq.html" class="active">FAQ</a>
         </section>
-        <section class="intro">
-            <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
-            <p>Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
-        </section>
-        <section class="adoption-links">
-            <h2>Adoption Resources</h2>
-            <ul>
-                <li><a href="https://home-home.org/" target="_blank">General Adoption Resources</a></li>
-                <li><a href="https://www.aspca.org/" target="_blank">ASPCA</a></li>
-                <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">Fish Rescue</a></li>
-                <li><a href="https://savethesnakes.org/snakerescuecall/" target="_blank">Snake Rescue</a></li>
-                <li><a href="https://ftlob.rescuegroups.org/" target="_blank">Bird Rescue</a></li>
-            </ul>
+        <section class="content">
+            <h2>Frequently Asked Questions</h2>
+            <p>Our “Pexperts” typically encounter the following questions when consulting with prospective “pet parents:”
+                <br><br>
+                <b>Question:</b> What is the best way to rid my dog or cat of fleas?
+                Sometimes our furry friends pick up hitchhikers that make them very itchy and uncomfortable. If gone unchecked, fleas can infest your home, making it even more difficult to rid them from your loved one’s coat. To eliminate fleas, choose a shampoo specially formulated to kill fleas and be sure to read and follow all instructions on the label. Repeat treatment as necessary until your pet is free of fleas; if you see skin irritation, stop use immediately and contact your local vet.
+                <br><br>
+                <b>Question:</b> How long can I expect my pet bird to live?
+                The answer can vary widely depending on the type of bird, the size, the environment, and of course, mother nature. Assuming all is well in the external factors that are out of the owner's control, cockatiels and budgies live up to 20 years old on average. However, many parrot variations are known to live nearly an astounding 100 years! As with many living organisms, longevity can be increased by keeping annual veterinarian visits, maintaining a healthy diet, and keeping your feathery friend's environment sanitary.    
+            </p>
+            <section class="images">
+                <img src="images/bird1.png" alt="Image of bird">
+                <img src="images/cat1.png" alt="Image of cat">
+                <img src="images/dog1.png" alt="Image of dog">
+            </section>
         </section>
         <section class="consultation-form">
             <h2>Request a Consultation</h2>
@@ -78,11 +99,6 @@
                 
                 <button type="submit">Submit</button>
             </form>
-        </section>
-        <section class="images">
-            <img src="images/bird1.png" alt="Image of bird">
-            <img src="images/cat1.png" alt="Image of cat">
-            <img src="images/dog1.png" alt="Image of dog">
         </section>
     </main>
     <footer>

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #003B6D;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #6699CC;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #003B6D;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #003B6D;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+.intro, .adoption-links, .consultation-form {
+    background-color: white;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%;
+}
+
+.consultation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.consultation-form label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.consultation-form input, .consultation-form select, .consultation-form textarea, .consultation-form button {
+    margin-top: 0.5em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.consultation-form button {
+    background-color: #003B6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.consultation-form button:hover {
+    background-color: #002A50;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+.image-placeholder {
+    background-color: #BDBDBD;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #003B6D;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+.breadcrumb {
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.breadcrumb span {
+    font-size: 1em;
+    color: #333;
+}

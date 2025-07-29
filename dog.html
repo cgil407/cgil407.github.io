@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/ppetbrand.png" alt="Brand Logo" class="logo">
+        <img src="images/pheader.png" alt="Header Logo" class="header">
+        <p>Evidence-based pet care advice for every pet lover</p>
+    </header>
+    <nav>
+        <form action="search_results.html" method="get">
+            <input type="text" placeholder="Search" class="search-bar" name="query">
+            <button type="submit">Search</button>
+        </form>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">Cats</a></li>
+            <li><a href="dog.html" class="active">Dogs</a></li>
+            <li><a href="bird.html">Birds</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <a href="dog.html" class="active">Dogs</a>
+        </section>
+        <section class="content">
+            <h2>Dogs</h2>
+            <p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise.</p>
+            
+            <p><b>Diet & Exercise</b></p>
+            <p>Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. A dog’s typical body mass is composed of somewhere between 60 and 70 percent water. The ASPCA says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!</p>
+
+            <p>Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally a range of 30–120 minutes of exercise is recommended per day! You can choose from a variety of toys to encourage physical activity; just be sure they are age-appropriate and do not pose a choking hazard. Pay careful attention to toys that require supervision.</p>
+
+            <p><b>Grooming & Handling</b></p>
+            <p>Keeping your furry family member clean is important to its health. Be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is important but can be challenging depending on your dog's temperament. Use soap formulated for dogs and rinse thoroughly. Handle your dog carefully; cradle small dogs with one hand under the chest and large dogs by supporting their chest and rear with both arms.</p>
+
+            <p><b>Vaccinations & Medications</b></p>
+            <p>Consult with your veterinarian about core vaccines typically recommended for dogs, including those for hepatitis, rabies, and parvovirus. Additional vaccines may be recommended based on your dog's environment.</p>
+            
+            <section class="images">
+                <img src="images/dog1.png" alt="Image of dog">
+                <img src="images/dog2.png" alt="Image of dog">
+            </section>
+        </section>
+        <section class="consultation-form">
+            <h2>Request a Consultation</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="pet-type">Type of Pet:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="cat">Cat</option>
+                    <option value="dog" selected>Dog</option>
+                    <option value="bird">Bird</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="timezone" required>
+                
+                <label for="pet-name">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+                
+                <label for="pet-age">Pet's Age:</label>
+                <input type="number" id="pet-age" name="pet-age" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
