@@ -54,41 +54,54 @@
                     <img src="images/cat1.png" alt="Image of cat">
                 </section>
         </section>
-        <section class="consultation-form">
-            <h2>Request a Consultation</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="pet-type">Type of Pet:</label>
-                <select id="pet-type" name="pet-type" required>
-                    <option value="cat" selected>Cat</option>
-                    <option value="dog">Dog</option>
-                    <option value="bird">Bird</option>
-                    <option value="other">Other</option>
-                </select>
-                
-                <label for="timezone">Time Zone:</label>
-                <input type="text" id="timezone" name="timezone" required>
-                
-                <label for="pet-name">Pet's Name:</label>
-                <input type="text" id="pet-name" name="pet-name" required>
-                
-                <label for="pet-age">Pet's Age:</label>
-                <input type="number" id="pet-age" name="pet-age" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <section id="contact-page" class="page-content" style="display: none;">
+    <h2 class="section-title">Request a Virtual Consultation</h2>
+    <p class="section-subtitle">
+        Please fill out the form below to request a virtual consultation with one of our "Pexperts". We will contact you within 48 hours to schedule your consultation. All fields are required.
+    </p>
+
+    <form class="consultation-form">
+        <div>
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" id="name" name="name" required class="form-input">
+        </div>
+        <div>
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required class="form-input">
+        </div>
+        <div>
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" id="email" name="email" required class="form-input">
+        </div>
+        <div>
+            <label for="timezone" class="form-label">Time Zone:</label>
+            <select id="timezone" name="timezone" required class="form-select">
+                <option value="">Select your time zone</option>
+                <option value="EST">Eastern Standard Time (EST)</option>
+                <option value="CST">Central Standard Time (CST)</option>
+                <option value="MST">Mountain Standard Time (MST)</option>
+                <option value="PST">Pacific Standard Time (PST)</option>
+                <option value="AKST">Alaska Standard Time (AKST)</option>
+                <option value="HST">Hawaii Standard Time (HST)</option>
+            </select>
+        </div>
+        <div>
+            <label for="pet-name" class="form-label">Pet's Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required class="form-input">
+        </div>
+        <div>
+            <label for="pet-type" class="form-label">Pet Type:</label>
+            <input type="text" id="pet-type" name="pet-type" required class="form-input" placeholder="e.g., Dog, Cat, Bird, Fish, Hamster">
+        </div>
+        <div>
+            <label for="pet-age" class="form-label">Pet's Age:</label>
+            <input type="text" id="pet-age" name="pet-age" required class="form-input" placeholder="e.g., 2 years, 6 months">
+        </div>
+        <div class="button-container">
+            <button type="submit" class="primary-button">Submit Request</button>
+        </div>
+    </form>
+</section>
     </main>
     <footer>
         <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
